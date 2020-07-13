@@ -6,7 +6,6 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
             <link rel="stylesheet" href="css/style.css" />
             <link rel="stylesheet" href="css/menu.css" />
-            <link rel="stylesheet" href="css/image_cv_animation.css" />
         </head>
         <body class="d-flex flex-column">
             <nav>
@@ -34,22 +33,14 @@
                         <h1 class="text-center text-uppercase text-white">CURRICULUM VITAE</h1>
                     </div>
                     <!-- Carte présentation -->
-                    <div id="carte_presentation" class="offset-2 col-7">
-                        <div class="fond_noir_carte_presentation"></div>
-                        <div class="">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col-6">
-                                    <div id="container">
-                                        <div id="inner">
-                                          <div class="demo-img">
-                                            <div class="demo-overlay">
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
+                    <div id="carte_presentation" class="row offset-3 col-6">
+                        <div class="fond_noir_carte_presentation">
+                            <div class="row d-flex" style="height:100%;">
+                                <div class="col-6 m-auto text-center">
+                                    <img src="img/fabien_lamotte.png" class="img-thumbnail rounded" id="cv_lamotte_fabien" alt="photo_cv_lamotte_fabien" title="photo_cv_lamotte_fabien" />
                                 </div>
-                                <div class="col-6 pt-5">
-                                    <ul class="list-unstyled float-left ">
+                                <div class="col-6 m-auto">
+                                    <ul class="list-unstyled float-left">
                                         <li><h2>Fabien Lamotte <br /><span style="font-size:15px">Développeur junior backend PHP sous Symfony 3 et 4 </span></h2></li>
                                         <li class="mt-5"><div><i class="fa fa-birthday-cake" aria-hidden="true"></i> 28 ans</div></li>
                                         <li><div><i class="fa fa-address-card-o" aria-hidden="true"></i> 4 Rue Ernest Lavisse 02700 Tergnier</div></li>
@@ -66,33 +57,29 @@
 
             <!-- Expérience -->
             <div class="container-fluid bloc" id="experience">
-                <div class="row no-gutters align-items-center">
+                <div class="row no-gutters">
                     <div class="col-12 d-flex justify-content-around text-center">
-                        <div style="margin-top:15%;">
-                            <a href="https://hsk.digital/" class="text-white text-decoration-none text-center" target="_blank">
-                                <div class="custom_buttons" style="margin-left:15%;">
-                                    <div class="custom_buttons_border">
+                        <div class="margin-auto" style="margin-top:15%;">
+                            <a href="https://hsk.digital/" class="text-white text-decoration-none margin-auto" target="_blank">
+                                <div class="custom_buttons">
+                                    <div class="custom_buttons_border text-center">
                                         <p>Hsk Digital</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                    <p>Développeur web - 1 mois</p>
-                                </div>
                             </a>
-                            <p>Mise en place d'un programme de patch-checking<br /> pour les productions Magento</p>
+                            <div class="text-center"> <p>Développeur web - 1 mois</p> </div>
+                            <p class="text-center">Mise en place d'un programme de patch-checking<br /> pour les productions Magento</p>
                         </div>
-                        <div style="margin-top:15%;">
+                        <div class="margin-auto" style="margin-top:15%;">
                             <a href="https://www.beware.fr/" class="text-white text-decoration-none" target="_blank" >
-                                <div class="custom_buttons" style="margin-left:23.5%;">
-                                    <div class="custom_buttons_border">
+                                <div class="custom_buttons d-flex">
+                                    <div class="custom_buttons_border margin-auto">
                                         <p>Beware Informatique</p>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                    <p>Développeur web - 2 mois</p>
-                                </div>
                             </a>
-                            <p>Travail sous Symfony 3.4<br /> Gestion prototypes de fichiers, graphiques<br /> datatable jquery en ajax, importations et exportations de données</p>
+                            <div class="text-center"> <p>Développeur web - 2 mois</p> </div>
+                            <p class="text-center">Travail sous Symfony 3.4<br /> Gestion prototypes de fichiers, graphiques<br /> datatable jquery en ajax<br />importations et exportations de données</p>
                         </div>
                     </div>
                 </div>
@@ -142,10 +129,6 @@
             <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-            <!-- animation iamge_cv -->
-            <script src="js/animation_image_cv.js"></script>
-
             <!-- custom script -->
             <script type="text/javascript">
                 // Affichage menu
@@ -164,9 +147,6 @@
                         }, 350);
                         return false;
                     });
-
-                // Changement design bouttons experiences
-
             </script>
         </body>
     </html>
