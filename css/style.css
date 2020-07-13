@@ -1,0 +1,37 @@
+/* Design des blocs */
+    .bloc { height:100vh; }
+
+/* Polices */
+    @font-face { font-family: 'EXTRAserif'; src: url('../font/EXTRASerif-Regular.ttf') format('ttf'); }
+    body{ color:white; font-size:30px; font-family:"EXTRAserif"; }
+    h1 { font-size:60px; }
+    h2 { font-size:50px; }
+    h3 { font-size:30px; }
+
+/* nav */
+    #webapp_cover{ z-index:1 !important; }
+    nav{ position:fixed; width:30%; right:0; text-align:end; padding-right: 2%; height:100vh; background: linear-gradient(to right, transparent, #292929 55%); display:none; z-index:1 !important; }
+    nav ul { margin-top:75%; }
+    nav ul a { color:white; transition: color 150ms ease; text-decoration:none !important; }
+    nav ul a:hover { color:#9C9C9C; }
+
+/* Bloc présentation */
+    #presentation{ background-image: url('../img/desk_work1.jpg'); opacity:0.8; box-shadow: inset 8px 8px 50px black; z-index:0 !important; }
+    #presentation div h1 { padding:10px; }
+    #carte_presentation { margin-top: 100px; }
+    .fond_noir_carte_presentation { position:absolute; height:460px; width:900px; background:black; margin-left:180px; opacity:0.9; border:0.3px solid white; }
+    #presentation .bande_marron { position:absolute; height:100vh; width:50%; background:#EA6B00; opacity:0.9;  -webkit-transform:skew(30deg); -moz-transform:skew(30deg); -o-transform:skew(30deg); tranform:skew(30deg); }
+    #presentation .bande_noire { position:absolute; width:100%; height: 10%; background:black; opacity:0.6; }
+    #fabien_lamotte_photo { height:auto; width:auto; }
+
+/* Bloc experience */
+    #experience{ background-image:url("../img/experience_background.png"); }
+
+    #experience .custom_buttons { border:2px solid white; height:105px; width:410px; background:#0E0400; transition: background 0.5s ease, box-shadow 0.5s ease; }
+    #experience .custom_buttons:hover { border:2px solid white; height:105px; width:410px; background:#7A7A7A; box-shadow: inset 3px 3px 10px #3C1400; }
+    #experience .custom_buttons .custom_buttons_border{ border:2px solid white; height:80px; width:390px; margin:10px; background:#110C04; padding-top:15px; transition: background 0.4s ease; }
+
+/* Bloc participations */ 
+    #participations { background: black; opacity:0.9; padding-top: 150px; }
+    .link_image_participations { background: white; transition: background 0.3s ease, box-shadow 0.3s ease; padding:5px; margin-right:5px;  }
+    .link_image_participations:hover { background: #b0b0b0; box-shadow: inset 3px 3px 10px #232323;}
