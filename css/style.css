@@ -29,6 +29,7 @@
     #experience .custom_buttons { border:2px solid white; height:105px; width:410px; background:#0E0400; transition: background 0.5s ease, box-shadow 0.5s ease; }
     #experience .custom_buttons:hover { border:2px solid white; height:105px; width:410px; background:#7A7A7A; box-shadow: inset 3px 3px 10px #3C1400; }
     #experience .custom_buttons .custom_buttons_border{ border:2px solid white; height:80px; width:390px; margin:10px; background:#110C04; padding-top:15px; transition: background 0.4s ease; }
+    .bloc-exp{ display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 /* Bloc participations */ 
     #participations { background: black; opacity:0.9; padding-top: 150px; }
