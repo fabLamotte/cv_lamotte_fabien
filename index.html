@@ -5,123 +5,58 @@
             <link rel="stylesheet" href="css/fa/css/font-awesome.css" />
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
             <link rel="stylesheet" href="css/style.css" />
-            <link rel="stylesheet" href="css/menu.css" />
         </head>
-        <body class="d-flex flex-column">
-            <nav>
-                <ul class="list-unstyled">
-                    <li><a href="#presentation" >Présentation</a></li>
-                    <li><a href="#experience" >Expérience</a></li>
-                    <li><a href="#participations" >Participations</a></li>
-                </ul>
-            </nav>
-            <div id="webapp_cover">
-                <div id="menu_button">
-                    <input type="checkbox" id="menu_checkbox">
-                    <label for="menu_checkbox" id="menu_label">
-                        <div id="menu_text_bar"></div>
-                    </label>
+        <body>
+            <div class="bande_marron"></div>
+            <div class="container-fluid">
+                <!-- Bannière contact -->
+                <div class="row no--gutters align-items-center text-center" id="contact">
+                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 col-xs-12">
+                        <ul class="d-flex justify-content-center list-unstyled">
+                            <li><a href="https://www.linkedin.com/in/fabien-lamotte-29b63212a/" id="link_linkedin" class="link_contact" target="_blank"><img src="img/linkedin.png" height="50" width="50" id="linkedin" class="linkedin" title="linkedin" alt="linkedin" /></a></li>
+                            <li><a href="https://github.com/fabLamotte" id="link_github" class="link_contact" target="_blank"><img src="img/github.png" height="50" width="50" id="github" class="github" title="github" alt="github" /></a></li>
+                            <li><a href="https://www.codingame.com/profile/00162815ee4705edb26f97a97b44fb727262233" id="link_codeingame" class="link_contact" target="_blank"><img src="img/CodeInGame.png" height="50" width="100" id="CodeInGame" class="CodeInGame" title="CodeInGame" alt="CodeInGame" /></a></li>
+                            <li><a href="https://battledev.blogdumoderateur.com/" id="link_battle_dev" class="link_contact" target="_blank"><img src="img/battle_dev.png" height="50" width="50" id="battledev" class="battledev" title="battledev" alt="battledev" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                        <p class="low-font text-center"><i class="fa fa-envelope-square"></i> devwebfabienlamottepro@outlook.fr</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12 col-xs-12">
+                        <p class="low-font text-center"><i class="fa fa-phone-square"></i> 06 07 61 88 52</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Présentation -->
-            <div class="container-fluid bloc col-12" id="presentation">
-                <div class="row ">
-                    <div class="bande_marron"></div>
-                    <div class="bande_noire"></div>
-                    <div class="container-fluid col-12 m-0 p-0">
-                        <h1 class="text-center text-uppercase text-white">CURRICULUM VITAE</h1>
-                    </div>
-                    <!-- Carte présentation -->
-                    <div id="carte_presentation" class="row offset-3 col-6">
-                        <div class="fond_noir_carte_presentation">
-                            <div class="row d-flex" style="height:100%;">
-                                <div class="col-6 m-auto text-center">
-                                    <img src="img/fabien_lamotte.png" class="img-thumbnail rounded" id="cv_lamotte_fabien" alt="photo_cv_lamotte_fabien" title="photo_cv_lamotte_fabien" />
-                                </div>
-                                <div class="col-6 m-auto">
-                                    <ul class="list-unstyled float-left">
-                                        <li><h2>Fabien Lamotte <br /><span style="font-size:15px">Développeur junior backend PHP sous Symfony 3 et 4 </span></h2></li>
-                                        <li class="mt-5"><div><i class="fa fa-birthday-cake" aria-hidden="true"></i> 28 ans</div></li>
-                                        <li><div><i class="fa fa-address-card-o" aria-hidden="true"></i> 4 Rue Ernest Lavisse 02700 Tergnier</div></li>
-                                        <li><div><i class="fa fa-phone-square"></i> 06 07 61 88 52</div></li>
-                                        <li><div><i class="fa fa-envelope-o"></i>devWebFabienLamottePro@outlook.fr</div></li>
-                                    </ul>
-                                </div>
+                <!-- Présentation -->
+                <div class="row no-gutters align-items-center h-50" id="presentation">
+                    <div class="col-12">
+                        <div class="text-center" id="carte">
+                            <div class="d-flex justify-content-center align-items-center m-2">
+                                <img src="img/fabien_lamotte.png" class="img-fluid img-thumbnail rounded-circle" id="image_cv" alt="fabien_lamotte_cv" title="fabien_lamotte_cv" />
+                                <p>Lamotte Fabien<br />Développeur web backend<br />Symfony 4</p>
                             </div>
-                        </div>
-                    </div>
-                    
-                </div>  
-            </div>
-
-            <!-- Expérience -->
-            <div class="container-fluid bloc" id="experience">
-                <div class="row no-gutters">
-                    <div class="col-12 d-flex justify-content-around text-center">
-                        <div class="bloc-exp no-gutters">
-                            <a href="https://hsk.digital/" class="text-white text-decoration-none margin-auto" target="_blank">
-                                <div class="custom_buttons">
-                                    <div class="custom_buttons_border text-center">
-                                        <p>Hsk Digital</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="text-center"> <p>Développeur web - 1 mois</p> </div>
-                            <p class="text-center">Mise en place d'un programme de patch-checking<br /> pour les productions Magento</p>
-                        </div>
-                        <div class="bloc-exp no-gutters">
-                            <a href="https://www.beware.fr/" class="text-white text-decoration-none" target="_blank">
-                                <div class="custom_buttons d-flex">
-                                    <div class="custom_buttons_border margin-auto">
-                                        <p>Beware Informatique</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="text-center"> <p>Développeur web - 2 mois</p> </div>
-                            <p class="text-center">Travail sous Symfony 3.4<br /> Gestion prototypes de fichiers, graphiques<br /> datatable jquery en ajax<br />importations et exportations de données</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Présence sur le net -->
-            <div class="container-fluid bloc" id="participations">
-                <div class="row">
-                    <ul class="list-unstyled offset-5 col-4">
-                        <li class="d-flex align-items-center m-1">
-                            <div class="border border-dark link_image_participations rounded">
-                                <a href="https://www.linkedin.com/in/fabien-lamotte-29b63212a/" target="_blank">
-                                    <img src="img/linkedin.png" width="150" height="150" alt="Lien Linkedin" title="Lien Linkedin" />
-                                </a>
+                <!-- Expériences -->
+                <div class="row no-gutters text-center p-2" id="experience">
+                        <div class="offset-xl-3 offset-lg-2 offset-md-2 offset-sm-0 offset-xs-0 col-xl-3 col-lg-4 col-md-4 col-sm-12 col-xs-12 card border border-dark p-2" style="width: 18rem;">
+                            <img class="card-img-top" src="img/beware_informatique.jpg" alt="card beware informatique" width="50" height="200" />
+                            <div class="card-body">
+                              <h5 class="card-title">Développeur web Symfony 3.4 - 2 mois</h5>
+                              <p class="card-text">Participation dans les productions pour leur client.<br /><br />Gestion prototypes et upload de fichiers, graphiques, jquery datatable en ajax, importations et exportations de données, ajout de features.</p>
+                              <a href="https://www.beware.fr/" target="_blank" class="btn btn-primary">Voir leur site</a>
                             </div>
-                            <div>LinkedIn</div>
-                        </li>
-                        <li class="d-flex align-items-center m-1">
-                            <div class="border border-dark link_image_participations rounded">
-                                <a href="https://github.com/fabLamotte" target="_blank">
-                                    <img src="img/github.png" width="150" height="150" alt="Lien Github" title="Lien Github" />
-                                </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-xs-12 card border border-dark p-2" style="width: 18rem;">
+                            <img class="card-img-top" src="img/hsk_digital.png" alt="card hsk digital" width="50" height="200" />
+                            <div class="card-body">
+                              <h5 class="card-title">Développeur web - 1 mois</h5>
+                              <p class="card-text">Mise en place d'un programme de patch-checking pour les productions Magento.<br /><br /> Prise en main de SuiteCrm pour faciliter la transition des technologies pour les collaborateurs</p>
+                              <a href="https://hsk.digital/" target="_blank" class="btn btn-primary">Voir leur site</a>
                             </div>
-                            <div>Github</div>
-                        </li>
-                        <li class="d-flex align-items-center m-1">
-                            <div class="border border-dark link_image_participations rounded">
-                                <a href="https://www.codingame.com/profile/00162815ee4705edb26f97a97b44fb727262233" target="_blank">
-                                    <img src="img/CodeInGame.png" width="150" height="50" alt="Lien Github" title="Lien Github" />
-                                </a>
-                            </div>
-                            <div>Pseudo: Arenholf</div>
-                        </li>
-                        <li class="d-flex align-items-center m-1">
-                            <div class="border border-dark link_image_participations rounded">
-                                <a href="https://battledev.blogdumoderateur.com/" target="_blank">
-                                    <img src="img/battle_dev.png" width="150" height="150" alt="" title="" />
-                                </a>
-                            </div>
-                            <div>Pseudo: fabienlamotte <br />Classement: 2967/3910</div>
-                        </li>
-                    </ul>
+                        </div>
                 </div>
             </div>
 
@@ -129,24 +64,23 @@
             <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            
             <!-- custom script -->
             <script type="text/javascript">
-                // Affichage menu
-                    $('#menu_checkbox').click(function(){
-                        $('nav').toggle(250);
-                    });
-                
-                // Lien ancre vers les blocks
-                    $('a[href^="#"]').click(function(){
-                        var the_id = $(this).attr("href");
-                        if (the_id === '#') {
-                            return;
-                        }
-                        $('html, body').animate({
-                            scrollTop:$(the_id).offset().top
-                        }, 350);
-                        return false;
-                    });
+                $('a[href^="#"]').click(function(){
+                    var id = $(this).attr("href");
+                    if (id === '#') {
+                        return;
+                    }
+                    $('html, body').animate({
+                        scrollTop:$(id).offset().top
+                    }, 350);
+                    return false;
+                });
+
+                $(document).ready(function(){
+                    $('#carte').fadeIn(600);
+                });
             </script>
         </body>
     </html>
